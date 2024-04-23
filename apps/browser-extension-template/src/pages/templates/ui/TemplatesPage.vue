@@ -32,12 +32,12 @@ const changeLocale = async (lang: 'en' | 'fr') => {
     <div class="flex">
       <div class="w-1/2 text-2xl font-semibold">{{ t('SELECT_TEMPLATE.PLEASE_SELECT_A_TEMPLATE') }}</div>
       <div class="w-1/2 text-right">
-          {{ t('MAIN_MENU.MENU_LANGUAGE') }}
-          <span v-if="locale === 'fr'">FR</span>
-          <a v-if="locale !== 'fr'" href="#/templates" @click="changeLocale('fr')">FR</a>
-          /
-          <span v-if="locale === 'en'">EN</span>
-          <a v-if="locale !== 'en'" href="#/templates" @click="changeLocale('en')">EN</a>
+        {{ t('MAIN_MENU.MENU_LANGUAGE') }}
+        <span v-if="locale === 'fr'">FR</span>
+        <a v-if="locale !== 'fr'" href="#/templates" @click="changeLocale('fr')">FR</a>
+        /
+        <span v-if="locale === 'en'">EN</span>
+        <a v-if="locale !== 'en'" href="#/templates" @click="changeLocale('en')">EN</a>
       </div>
     </div>
     <div class="mt-3">{{ t('SELECT_TEMPLATE.CLICK_TO_MODIFY_OR_SELECT_TEMPLATE') }}</div>

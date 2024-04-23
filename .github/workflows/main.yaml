@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ "master", "release/ms-word-addin"]
   push:
-    branches: [ "master" ]
+    branches: [ "master" , "feat_61_62_wf"]
 
 jobs:
   bootstrap:
